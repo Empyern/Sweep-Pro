@@ -27,12 +27,12 @@
 };
 
 &spi0 {
-    status = "okay";
-    compatible = "nordic,nrf-spim";
-    pinctrl-0 = <&spi0_default>;
-    pinctrl-1 = <&spi0_sleep>;
-    pinctrl-names = "default", "sleep";
-    cs-gpios = <&gpio0 17 GPIO_ACTIVE_LOW>; 
+	status = "okay";
+	compatible = "nordic,nrf-spim";
+	pinctrl-0 = <&spi0_default>;
+	pinctrl-1 = <&spi0_sleep>;
+	pinctrl-names = "default", "sleep";
+	cs-gpios = <&gpio0 17 GPIO_ACTIVE_LOW>;
 };
 
 / {
@@ -51,17 +51,36 @@
 			reg = <0>;
 			width = <152>;
 			height = <152>;
+			rotation = <90>;
+			
 			mipi-max-frequency = <4000000>;
 			busy-gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;
 			tssv = <0x80>;
-			rotation = <90>;// 关键：添加这一行
 			
 			full {
 				border-waveform = <0x05>;
 			};
 			
 			partial {
-				border-waveform = <0x3c>;
+				border-waveform = <0x01>;
+				dummy-line = <0x1a>;
+				gate-line-width = <0x08>;
+				vcom = <0x22>;
+				lut = [
+				00 40 00 00 00 00 00 00 00 00 00 00
+				80 80 00 00 00 00 00 00 00 00 00 00
+				40 40 00 00 00 00 00 00 00 00 00 00
+				00 80 00 00 00 00 00 00 00 00 00 00
+				00 00 00 00 00 00 00 00 00 00 00 00
+				0A 00 00 00 00 00 02 01 00 00 00 00
+				00 00 01 00 00 00 00 00 00 00 00 00
+				00 00 00 00 00 00 00 00 00 00 00 00
+				00 00 00 00 00 00 00 00 00 00 00 00
+				00 00 00 00 00 00 00 00 00 00 00 00
+				00 00 00 00 00 00 00 00 00 00 00 00
+				00 00 00 00 00 00 00 00 00 00 00 00
+				22 22 22 22 22 22 00 00 00
+				];
 			};
 		};
 	};
