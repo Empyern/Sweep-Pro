@@ -19,7 +19,7 @@ A high-performance, ultra-thin split ergonomic keyboard designed for enthusiasts
 * **Massive Battery Life:** Equipped with a **4000mAh total capacity** (2000mAh per side) for months of wireless usage on a single charge.
 * **Integrated Cirque Trackpad:** Smooth and precise navigation with a built-in Cirque GlidePoint® circle trackpad—eliminating the need for a mouse.
 * **Dual Customizable Encoders:** Twin rotary encoders for intuitive volume control, page scrolling, or custom macro execution.
-* **ZMK Studio Ready:** Effortless real-time key remapping and encoder configuration via ZMK Studio—**no coding or reflashing required.**
+* **ZMK Studio Ready:** Effortless real-time key remapping via ZMK Studio—**no coding or reflashing required.**
 * **Magnetic Tenting System:** Rapidly adjust your typing angle for maximum ergonomic comfort with our specialized magnetic stands.
 * **Ultra-Thin Profile:** Engineered for low-profile switches and **custom-designed Sweep Pro keycaps** for a sleek, modern aesthetic.
 * **Premium PBT Keycaps:** 34-key set featuring 5-sided dye-sublimation and front-printed sub-layer legends for easy navigation.
@@ -162,6 +162,23 @@ We offer 4 configurations to suit your specific workflow:
 
 Our default 34-key layout is designed for maximum efficiency with minimal finger travel. 
 
-![键位图](images/keymap.png)
+![layout](images/keymap.png)
+--- 
+
+## 🎨 More Color Options
+
+![56](images/56.png)
+![57](images/57.png)
+![58](images/58.png)
+![59](images/59.png)
+![60](images/60.png)
+![61](images/61.png)
+![62](images/62.png)
+![63](images/63.png)
+![64](images/64.png)
+![65](images/65.png)
+![66](images/66.png)
+![67](images/67.png)
+
 
 *Designed with ❤️ by [sky-bro](https://github.com/sky-bro)*
