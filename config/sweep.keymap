@@ -12,10 +12,10 @@
 #include "behaviors/character_map.dtsi"
 #include "behaviors/report.dtsi"
 
-#define DEF 0
-#define RIG 1
-#define LEF 2
-#define TRI 3
+#define DEF  0
+#define NAV  1
+#define SYM  2
+#define FUNC 3
 
 / {
     behaviors {
@@ -65,12 +65,12 @@
 &kp B             &kp L               &kp D           &kp W           &kp Z        &kp SINGLE_QUOTE  &kp F  &kp O                &kp U                  &kp J
 &kp N             &kp R               &kp T           &kp S           &kp G        &kp Y             &kp H  &kp A                &kp E                  &kp I
 &hml LEFT_SHIFT Q  &hml LEFT_CONTROL X  &hml LEFT_GUI M  &hml LEFT_ALT C  &kp V        &kp K             &kp P  &hmr RIGHT_GUI COMMA  &hmr RIGHT_CONTROL DOT  &hmr RIGHT_SHIFT SLASH
-                                      &kp C_MUTE      &mo 2           &kp SPACE    &mo 1             &mo 3  &studio_unlock
+                                      &kp C_MUTE      &mo SYM           &kp SPACE    &mo NAV             &mo FUNC  &studio_unlock
             >;
         };
 
         right_layer {
-            display-name = "NUM";
+            display-name = "NAV";
             bindings = <
 &mkp MB3  &mkp MB2        &mmv MOVE_UP    &mkp MB1         &trans           &kp PAGE_UP    &kp PAGE_DOWN    &kp HOME        &kp END     &kp DELETE
 &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans           &kp LEFT       &kp DOWN         &kp UP          &kp RIGHT   &kp ENTER
@@ -80,7 +80,7 @@
         };
 
         left_layer {
-            display-name = "SYMBOL";
+            display-name = "SYM";
             bindings = <
 &kp EXCL   &kp AT     &kp HASH              &kp DLLR               &kp PRCNT            &kp CARET      &kp AMPS        &kp ASTRK        &kp MINUS     &kp EQUAL
 &kp GRAVE  &kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON            &kp PIPE       &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp UNDER     &kp PLUS
@@ -92,9 +92,9 @@
         tri_layer {
             display-name = "FUNC";
             bindings = <
-&kp F1  &kp F2   &kp F3      &kp F4   &bt BT_SEL 0    &bt BT_SEL 2  &kp NUMBER_7  &kp NUMBER_8    &kp NUMBER_9  &studio_unlock
-&kp F5  &kp F6   &kp F7      &kp F8   &bt BT_SEL 1    &bt BT_SEL 3  &kp NUMBER_4  &kp N5          &kp NUMBER_6  &bootloader
-&kp F9  &kp F10  &kp F11     &kp F12  &bt BT_CLR      &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &default_report
+&kp F9  &kp F10  &kp F11    &kp F12 &bt BT_SEL 0    &bt BT_SEL 2  &kp NUMBER_7  &kp NUMBER_8    &kp NUMBER_9  &studio_unlock
+&kp F5  &kp F6   &kp F7     &kp F8  &bt BT_SEL 1    &bt BT_SEL 3  &kp NUMBER_4  &kp N5          &kp NUMBER_6  &bootloader
+&kp 1   &kp F2   &kp F3     &kp F4  &bt BT_CLR      &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &default_report
                  &kp C_MUTE  &trans   &trans          &trans        &trans        &studio_unlock
             >;
         };
