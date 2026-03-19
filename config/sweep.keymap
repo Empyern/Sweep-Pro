@@ -52,8 +52,8 @@
         default_layer {
             display-name = "DEFAULT";
             bindings = <
-&kp B             &kp L               &kp E           &kp W           &kp Z        &kp SINGLE_QUOTE  &kp F  &kp O                &kp U                  &kp J
-&kp A             &ht LALT S          &ht LCTRL D     &ht LGUI F      &kp G        &kp Y             &kp H  &kp A                &kp E                  &kp I
+&kp B             &kp L               &kp D           &kp W           &kp Z        &kp SINGLE_QUOTE  &kp F  &kp O                &kp U                  &kp J
+&kp N             &kp R               &kp T           &kp S           &kp G        &kp Y             &kp H  &kp A                &kp E                  &kp I
 &mt LEFT_SHIFT Q  &mt LEFT_CONTROL X  &mt LEFT_GUI M  &mt LEFT_ALT C  &kp V        &kp K             &kp P  &mt RIGHT_GUI COMMA  &mt RIGHT_CONTROL DOT  &mt LEFT_SHIFT SLASH
                                       &kp C_MUTE      &mo 2           &kp SPACE    &mo 1             &mo 3  &studio_unlock
             >;
