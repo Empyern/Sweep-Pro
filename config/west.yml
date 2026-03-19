@@ -1,15 +1,15 @@
 manifest:
   remotes:
   - name: zmkfirmware
-    #url-base: https://github.com/lynnlee0522 # 修改这里
-    url-base: https://github.com/zmkfirmware/zmk
+    url-base: https://github.com/lynnlee0522 # 修改这里
+    #url-base: https://github.com/zmkfirmware/zmk
   - name: nxtkb
     url-base: https://github.com/nxtkb
   projects:
   - name: zmk
     remote: zmkfirmware
-    #revision: ink_rotation # 修改这里，指定分支名
-    revision: main
+    revision: ink_rotation # 修改这里，指定分支名
+    #revision: main
     import: app/west.yml
   - name: zmk-behavior-report
     remote: nxtkb
