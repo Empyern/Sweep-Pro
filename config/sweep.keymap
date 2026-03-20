@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+
 // #include "behaviors/character_map.dtsi"
 // #include "behaviors/report.dtsi"
 
@@ -41,41 +42,59 @@
         default_layer {
             display-name = "DEFAULT";
             bindings = <
-                    &kp B             &kp L        &kp D           &kp W           &kp Z        &kp SINGLE_QUOTE  &kp F     &kp O                &kp U             &kp J
-                    &kp N             &kp R        &kp T           &kp S           &kp G        &kp Y             &kp H     &kp A                &kp E             &kp I
-                    &ht LEFT_SHIFT Q  &ht LCTRL X  &ht LEFT_GUI M  &ht LEFT_ALT C  &kp V        &kp K             &kp P     &ht RIGHT_GUI COMMA  &ht RCTRL PERIOD  &ht RIGHT_SHIFT FSLH
-                                                                   &mo SYM         &kp SPACE    &mo NAV           &mo FUNC  
+&kp B             &kp L        &kp D           &kp W           &kp Z        &kp SINGLE_QUOTE  &kp F     &kp O                &kp U             &kp J
+&kp N             &kp R        &kp T           &kp S           &kp G        &kp Y             &kp H     &kp A                &kp E             &kp I
+&ht LEFT_SHIFT Q  &ht LCTRL X  &ht LEFT_GUI M  &ht LEFT_ALT C  &kp V        &kp K             &kp P     &ht RIGHT_GUI COMMA  &ht RCTRL PERIOD  &ht RIGHT_SHIFT FSLH
+                                               &mo SYM         &kp SPACE    &mo NAV           &mo FUNC
             >;
         };
 
         right_layer {
             display-name = "NAV";
             bindings = <
-                    &mkp MB3  &mkp MB2        &mmv MOVE_UP    &mkp MB1         &trans           &kp PAGE_UP    &kp PAGE_DOWN    &kp HOME        &kp END     &kp DELETE
-                    &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans           &kp LEFT       &kp DOWN         &kp UP          &kp RIGHT   &kp ENTER
-                    &trans    &trans          &trans          &trans           &trans           &kp LS(LC(T))  &kp PRINTSCREEN  &kp TAB         &kp ESCAPE  &trans
-                                                              &trans           &kp BACKSPACE     &trans         &trans          
+&mkp MB3  &mkp MB2        &mmv MOVE_UP    &mkp MB1         &trans           &kp PAGE_UP    &kp PAGE_DOWN    &kp HOME  &kp END     &kp DELETE
+&trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans           &kp LEFT       &kp DOWN         &kp UP    &kp RIGHT   &kp ENTER
+&trans    &trans          &trans          &trans           &trans           &kp LS(LC(T))  &kp PRINTSCREEN  &kp TAB   &kp ESCAPE  &trans
+                                          &trans           &kp BACKSPACE    &trans         &trans
             >;
         };
 
         left_layer {
             display-name = "SYM";
             bindings = <
-                    &kp EXCL   &kp AT     &kp HASH              &kp DLLR               &kp PRCNT            &kp CARET      &kp AMPS        &kp ASTRK        &kp MINUS     &kp EQUAL
-                    &kp GRAVE  &kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON            &kp PIPE       &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp UNDER     &kp PLUS
-                    &trans     &trans     &kp SEMICOLON         &kp LEFT_BRACKET       &kp RIGHT_BRACKET    &kp BACKSLASH  &trans          &trans           &kp QUESTION  &trans
-                                                                &trans                 &trans               &trans         &trans       
+&kp EXCL   &kp AT     &kp HASH              &kp DLLR               &kp PRCNT            &kp CARET      &kp AMPS        &kp ASTRK        &kp MINUS     &kp EQUAL
+&kp GRAVE  &kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON            &kp PIPE       &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp UNDER     &kp PLUS
+&trans     &trans     &kp SEMICOLON         &kp LEFT_BRACKET       &kp RIGHT_BRACKET    &kp BACKSLASH  &trans          &trans           &kp QUESTION  &trans
+                                            &trans                 &trans               &trans         &trans
             >;
         };
 
         tri_layer {
             display-name = "FUNC";
             bindings = <
-                    &kp F9  &kp F10  &kp F11     &kp F12  &bt BT_SEL 0    &bt BT_SEL 2  &kp NUMBER_7  &kp NUMBER_8    &kp NUMBER_9  &bootloader
-                    &kp F5  &kp F6   &kp F7      &kp F8   &bt BT_SEL 1    &bt BT_SEL 3  &kp NUMBER_4  &kp N5          &kp NUMBER_6  &trans
-                    &kp 1   &kp F2   &kp F3      &kp F4   &bt BT_CLR      &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &trans
-                                                     &trans   &trans      &trans        &trans        
+&kp F9  &kp F10  &kp F11  &kp F12  &bt BT_SEL 0    &bt BT_SEL 2  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &bootloader
+&kp F5  &kp F6   &kp F7   &kp F8   &bt BT_SEL 1    &bt BT_SEL 3  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans
+&kp 1   &kp F2   &kp F3   &kp F4   &bt BT_CLR      &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+                          &trans   &trans          &trans        &trans
             >;
+        };
+
+        layer_4 {
+            bindings = <
+&kp Q  &kp W  &kp E  &kp R   &kp T     &kp Y   &kp U   &kp I      &kp O    &kp P
+&kp A  &kp S  &kp D  &kp F   &kp G     &kp H   &kp J   &kp K      &kp L    &kp LS(COLON)
+&kp Z  &kp X  &kp C  &kp V   &kp B     &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH
+                     &tog 0  &trans    &trans  &trans
+            >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        gaming_layer {
+            if-layers = <2 3>;
+            then-layer = <4>;
         };
     };
 };
