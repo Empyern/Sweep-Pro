@@ -44,7 +44,7 @@
 &kp B             &kp L        &kp D           &kp W           &kp Z        &kp SINGLE_QUOTE  &kp F     &kp O                &kp U             &kp J
 &kp N             &kp R        &kp T           &kp S           &kp G        &kp Y             &kp H     &kp A                &kp E             &kp I
 &ht LEFT_SHIFT Q  &ht LCTRL X  &ht LEFT_GUI M  &ht LEFT_ALT C  &kp V        &kp K             &kp P     &ht RIGHT_GUI COMMA  &ht RCTRL PERIOD  &ht RIGHT_SHIFT FSLH
-                               &kp C_MUTE      &mo SYM         &kp SPACE    &mo NAV           &mo FUNC  &trans
+                                               &mo SYM         &kp SPACE    &mo NAV           &mo FUNC  
             >;
         };
 
@@ -54,7 +54,7 @@
 &mkp MB3  &mkp MB2        &mmv MOVE_UP    &mkp MB1         &trans           &kp PAGE_UP    &kp PAGE_DOWN    &kp HOME        &kp END     &kp DELETE
 &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans           &kp LEFT       &kp DOWN         &kp UP          &kp RIGHT   &kp ENTER
 &trans    &trans          &trans          &trans           &trans           &kp LS(LC(T))  &kp PRINTSCREEN  &kp TAB         &kp ESCAPE  &trans
-                          &kp C_MUTE      &trans           &kp BACKSPACE    &trans         &trans           &trans
+                                          &trans           &kp BACKSPACE    &trans         &trans          
             >;
         };
 
@@ -64,7 +64,7 @@
 &kp EXCL   &kp AT     &kp HASH              &kp DLLR               &kp PRCNT            &kp CARET      &kp AMPS        &kp ASTRK        &kp MINUS     &kp EQUAL
 &kp GRAVE  &kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON            &kp PIPE       &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp UNDER     &kp PLUS
 &trans     &trans     &kp SEMICOLON         &kp LEFT_BRACKET       &kp RIGHT_BRACKET    &kp BACKSLASH  &trans          &trans           &kp QUESTION  &trans
-                      &kp C_MUTE            &trans                 &trans               &trans         &trans          &trans
+                                            &trans                 &trans               &trans         &trans       
             >;
         };
 
@@ -74,7 +74,7 @@
 &kp F9  &kp F10  &kp F11     &kp F12  &bt BT_SEL 0    &bt BT_SEL 2  &kp NUMBER_7  &kp NUMBER_8    &kp NUMBER_9  &bootloader
 &kp F5  &kp F6   &kp F7      &kp F8   &bt BT_SEL 1    &bt BT_SEL 3  &kp NUMBER_4  &kp N5          &kp NUMBER_6  &trans
 &kp 1   &kp F2   &kp F3      &kp F4   &bt BT_CLR      &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &trans
-                 &kp C_MUTE  &trans   &trans          &trans        &trans        &trans
+                                 &trans   &trans      &trans        &trans        
             >;
         };
     };
