@@ -1,5 +1,5 @@
 #include "sweep.dtsi"
 
-&default_transform {
-	col-offset = <5>;
-};
+//&default_transform {
+//	col-offset = <5>;
+//};
