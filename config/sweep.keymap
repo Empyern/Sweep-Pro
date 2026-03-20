@@ -26,16 +26,16 @@
         };
 
         ht: hold_tap {
-			label = "hold_tap";
-			compatible = "zmk,behavior-hold-tap";
-			#binding-cells = <2>;
-			flavor = "balanced";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <150>;
-			require-prior-idle-ms = <125>;
-			global-quick-tap;
-			bindings = <&kp>, <&kp>;
-		};
+            label = "hold_tap";
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <125>;
+            global-quick-tap;
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     keymap {
@@ -44,30 +44,30 @@
         default_layer {
             display-name = "DEFAULT";
             bindings = <
-&kp B  &kp L  &kp D       &kp W    &kp Z        &kp SINGLE_QUOTE  &kp F     &kp O           &kp U       &kp J
-&kp N  &kp R  &kp T       &kp S    &kp G        &kp Y             &kp H     &kp A           &kp E       &kp I
-&kp Q  &kp X  &kp M       &kp C    &kp V        &kp K             &kp P     &kp COMMA       &kp PERIOD  &kp SLASH
-              &kp C_MUTE  &mo SYM  &kp SPACE    &mo NAV           &mo FUNC  &studio_unlock
+&kp B             &kp L        &kp D           &kp W           &kp Z        &kp SINGLE_QUOTE  &kp F     &kp O                &kp U             &kp J
+&kp N             &kp R        &kp T           &kp S           &kp G        &kp Y             &kp H     &kp A                &kp E             &kp I
+&ht LEFT_SHIFT Q  &ht LCTRL X  &ht LEFT_GUI M  &ht LEFT_ALT C  &kp V        &kp K             &kp P     &ht RIGHT_GUI COMMA  &ht RCTRL PERIOD  &ht RIGHT_SHIFT FSLH
+                               &kp C_MUTE      &mo SYM         &kp SPACE    &mo NAV           &mo FUNC  &studio_unlock
             >;
         };
 
         right_layer {
             display-name = "NAV";
             bindings = <
-&mkp MB3        &mkp MB2        &mmv MOVE_UP    &mkp MB1         &trans           &kp PAGE_UP    &kp PAGE_DOWN    &kp HOME        &kp END     &kp DELETE
-&trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans           &kp LEFT       &kp DOWN         &kp UP          &kp RIGHT   &kp ENTER
-&kp LEFT_SHIFT  &kp LCTRL       &kp LEFT_GUI    &kp LEFT_ALT     &trans           &kp LS(LC(T))  &kp PRINTSCREEN  &kp TAB         &kp ESCAPE  &trans
-                                &kp C_MUTE      &trans           &kp BACKSPACE    &trans         &trans           &studio_unlock
+&mkp MB3  &mkp MB2        &mmv MOVE_UP    &mkp MB1         &trans           &kp PAGE_UP    &kp PAGE_DOWN    &kp HOME        &kp END     &kp DELETE
+&trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans           &kp LEFT       &kp DOWN         &kp UP          &kp RIGHT   &kp ENTER
+&trans    &trans          &trans          &trans           &trans           &kp LS(LC(T))  &kp PRINTSCREEN  &kp TAB         &kp ESCAPE  &trans
+                          &kp C_MUTE      &trans           &kp BACKSPACE    &trans         &trans           &studio_unlock
             >;
         };
 
         left_layer {
             display-name = "SYM";
             bindings = <
-&kp EXCL   &kp AT        &kp HASH              &kp DLLR               &kp PRCNT            &kp CARET      &kp AMPS        &kp ASTRK        &kp MINUS  &kp EQUAL
-&kp GRAVE  &kp TILDE     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON            &kp PIPE       &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp UNDER  &kp PLUS
-&trans     &kp QUESTION  &kp SEMICOLON         &kp LEFT_BRACKET       &kp RIGHT_BRACKET    &kp BACKSLASH  &kp RIGHT_ALT   &kp RIGHT_GUI    &kp RCTRL  &kp RIGHT_SHIFT
-                         &kp C_MUTE            &trans                 &trans               &trans         &trans          &studio_unlock
+&kp EXCL   &kp AT     &kp HASH              &kp DLLR               &kp PRCNT            &kp CARET      &kp AMPS        &kp ASTRK        &kp MINUS     &kp EQUAL
+&kp GRAVE  &kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON            &kp PIPE       &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp UNDER     &kp PLUS
+&trans     &trans     &kp SEMICOLON         &kp LEFT_BRACKET       &kp RIGHT_BRACKET    &kp BACKSLASH  &trans          &trans           &kp QUESTION  &trans
+                      &kp C_MUTE            &trans                 &trans               &trans         &trans          &studio_unlock
             >;
         };
 
