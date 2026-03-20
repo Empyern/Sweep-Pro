@@ -26,14 +26,12 @@
         };
 
         ht: hold_tap {
-            label = "hold_tap";
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
             require-prior-idle-ms = <125>;
-            global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
     };
