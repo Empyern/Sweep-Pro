@@ -44,10 +44,10 @@
         default_layer {
             display-name = "DEFAULT";
             bindings = <
-&kp B             &kp L        &kp D           &kp W           &kp Z        &kp SINGLE_QUOTE  &kp F     &kp O                &kp U             &kp J
-&kp N             &kp R        &kp T           &kp S           &kp G        &kp Y             &kp H     &kp A                &kp E             &kp I
-&ht LEFT_SHIFT Q  &ht LCTRL X  &ht LEFT_GUI M  &ht LEFT_ALT C  &kp V        &kp K             &kp P     &ht RIGHT_GUI COMMA  &ht RCTRL PERIOD  &ht RIGHT_SHIFT FSLH
-                                               &mo SYM         &kp SPACE    &mo NAV           &mo FUNC
+&kp B             &kp L        &kp D           &kp W           &kp Z        &kp SINGLE_QUOTE  &kp F  &kp O                &kp U             &kp J
+&kp N             &kp R        &kp T           &kp S           &kp G        &kp Y             &kp H  &kp A                &kp E             &kp I
+&ht LEFT_SHIFT Q  &ht LCTRL X  &ht LEFT_GUI M  &ht LEFT_ALT C  &kp V        &kp K             &kp P  &ht RIGHT_GUI COMMA  &ht RCTRL PERIOD  &ht RIGHT_SHIFT FSLH
+                                               &mo 2           &kp SPACE    &mo 1             &mo 3
             >;
         };
 
@@ -75,18 +75,9 @@
             display-name = "FUNC";
             bindings = <
 &kp F9  &kp F10  &kp F11  &kp F12  &bt BT_SEL 0    &bt BT_SEL 2  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &bootloader
-&kp F5  &kp F6   &kp F7   &kp F8   &bt BT_SEL 1    &bt BT_SEL 3  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &tog 4
+&kp F5  &kp F6   &kp F7   &kp F8   &bt BT_SEL 1    &bt BT_SEL 3  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans
 &kp 1   &kp F2   &kp F3   &kp F4   &bt BT_CLR      &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &soft_off
                           &trans   &trans          &trans        &trans
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-&kp Q  &kp W  &kp E  &kp R   &kp T     &kp Y   &kp U   &kp I      &kp O    &kp P
-&kp A  &kp S  &kp D  &kp F   &kp G     &kp H   &kp J   &kp K      &kp L    &tog 4
-&kp Z  &kp X  &kp C  &kp V   &kp B     &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH
-                     &trans  &trans    &trans  &trans
             >;
         };
     };
