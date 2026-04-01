@@ -52,7 +52,7 @@
         right_layer {
             display-name = "NAV";
             bindings = <
-&mkp MB3  &mkp MB1        &mmv MOVE_UP    &mkp MB2           &mmv MOVE_X(200)     &kp PAGE_UP    &kp PAGE_DOWN    &kp HOME  &kp END     &kp DELETE
+&mkp MB3  &mkp MB2        &mmv MOVE_UP    &mkp MB1           &mmv MOVE_X(200)     &kp PAGE_UP    &kp PAGE_DOWN    &kp HOME  &kp END     &kp DELETE
 &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &mmv MOVE_X(-200)    &kp LEFT       &kp DOWN         &kp UP    &kp RIGHT   &kp ENTER
 &trans    &trans          &trans          &mmv MOVE_Y(-200)  &mmv MOVE_Y(200)     &kp LS(LC(T))  &kp PRINTSCREEN  &kp TAB   &kp ESCAPE  &trans
                                           &trans             &kp BACKSPACE        &trans         &trans
