@@ -62,10 +62,10 @@
         left_layer {
             display-name = "SYM";
             bindings = <
-&kp EXCL   &kp AT     &kp HASH              &kp DLLR               &kp PRCNT            &kp CARET      &kp AMPS        &kp ASTRK        &kp MINUS     &kp EQUAL
-&kp GRAVE  &kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON            &kp PIPE       &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp UNDER     &kp PLUS
-&trans     &trans     &kp SEMICOLON         &kp LEFT_BRACKET       &kp RIGHT_BRACKET    &kp BACKSLASH  &trans          &trans           &kp QUESTION  &trans
-                                            &trans                 &trans               &trans         &trans
+&kp EXCL   &kp AT     &kp HASH              &kp DLLR               &kp PRCNT    &kp CARET  &kp AMPS        &kp ASTRK          &kp MINUS     &kp EQUAL
+&kp GRAVE  &kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON    &kp PIPE   &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp UNDER     &kp PLUS
+&trans     &trans     &kp LBKT              &kp RBKT               &kp SEMI     &trans     &kp BSLH        &kp DOUBLE_QUOTES  &kp QUESTION  &kp FSLH
+                                            &trans                 &trans       &trans     &trans
             >;
         };
 
