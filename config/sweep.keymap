@@ -54,7 +54,7 @@
             bindings = <
 &mkp MB3  &mkp MB2        &mmv MOVE_UP    &mkp MB1         &msc SCRL_UP       &kp PAGE_UP    &kp PAGE_DOWN    &kp HOME  &kp END     &kp DELETE
 &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN     &kp LEFT       &kp DOWN         &kp UP    &kp RIGHT   &kp ENTER
-&trans    &trans          &kp LA(TAB)     &msc SCRL_LEFT   &msc SCRL_RIGHT    &kp LS(LC(T))  &kp PRINTSCREEN  &kp TAB   &kp ESCAPE  &trans
+&trans    &kp TAB         &kp LEFT_ALT    &msc SCRL_LEFT   &msc SCRL_RIGHT    &kp LS(LC(T))  &kp PRINTSCREEN  &kp TAB   &kp ESCAPE  &trans
                                           &trans           &kp BACKSPACE      &trans         &trans
             >;
         };
