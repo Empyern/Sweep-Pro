@@ -8,8 +8,8 @@
 ---
 include:
 - board: nice_nano//zmk
-  shield: cradio_left
+  shield: sweep_left
 - board: nice_nano//zmk
-  shield: cradio_right
+  shield: sweep_right
 - board: nice_nano//zmk
   shield: settings_reset
