@@ -1,12 +1,11 @@
 manifest:
   remotes:
   - name: zmkfirmware
-#    url-base: https://github.com/zmkfirmware
-  url-base: https://github.com/xudongzheng
+    url-base: https://github.com/zmkfirmware
   projects:
   - name: zmk
     remote: zmkfirmware
-    revision: bt-no-profile-pr
+    revision: main
     import: app/west.yml
   self:
     path: config
